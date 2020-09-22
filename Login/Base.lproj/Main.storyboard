@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KrE-6e-dqR">
+                                <rect key="frame" x="66" y="431" width="282" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5n-yK-l3x" userLabel="Rules">
+                                <rect key="frame" x="20" y="44" width="374" height="266"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Правила:  1. Логин может быть как email-ом так и обычной строкой (никнейм).
+ 2. Минимальная длина логина - 3 символа, максимальная - 32.
+ 3. Логин может состоять из латинских букв, цифр, минуса и точки. 
+4. Логин не может начинаться на цифру, точку, минус.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ0-gU-uoc" userLabel="Login">
+                                <rect key="frame" x="73" y="402" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oG-Wn-49C" userLabel="Error message">
+                                <rect key="frame" x="20" y="502" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="D9T-va-G3s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NJ0-gU-uoc" secondAttribute="trailing" constant="244" id="3jc-bK-Nvz"/>
+                            <constraint firstItem="1oG-Wn-49C" firstAttribute="leading" secondItem="l5n-yK-l3x" secondAttribute="leading" id="3pp-Tf-kLV"/>
+                            <constraint firstItem="KrE-6e-dqR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6O1-aU-4Gx"/>
+                            <constraint firstItem="1oG-Wn-49C" firstAttribute="trailing" secondItem="l5n-yK-l3x" secondAttribute="trailing" id="FXs-lL-eFB"/>
+                            <constraint firstItem="KrE-6e-dqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="IoA-TD-KSm"/>
+                            <constraint firstItem="l5n-yK-l3x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NF6-Bm-Gqf"/>
+                            <constraint firstItem="KrE-6e-dqR" firstAttribute="top" secondItem="NJ0-gU-uoc" secondAttribute="bottom" constant="8" id="Uxa-WD-aFk"/>
+                            <constraint firstItem="1oG-Wn-49C" firstAttribute="top" secondItem="KrE-6e-dqR" secondAttribute="bottom" constant="37" id="VMy-Dz-cqt"/>
+                            <constraint firstItem="l5n-yK-l3x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZEe-E1-Md1"/>
+                            <constraint firstItem="KrE-6e-dqR" firstAttribute="top" secondItem="l5n-yK-l3x" secondAttribute="bottom" constant="121" id="cXe-uI-e4k"/>
+                            <constraint firstItem="KrE-6e-dqR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyd-KY-y3b"/>
+                            <constraint firstItem="l5n-yK-l3x" firstAttribute="centerX" secondItem="KrE-6e-dqR" secondAttribute="centerX" id="xvB-qj-T7z"/>
+                            <constraint firstItem="NJ0-gU-uoc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="zYv-Ds-KUe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorMessageLabel" destination="1oG-Wn-49C" id="UVS-Gu-sZ8"/>
+                        <outlet property="loginTextField" destination="KrE-6e-dqR" id="1WS-do-MmC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
